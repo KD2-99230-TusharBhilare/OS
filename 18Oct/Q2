@@ -1,0 +1,22 @@
+echo "1.Date"
+echo "2. CAL"
+echo "3.Ls"
+echo "4.Pwd"
+echo "5.Exit"
+choice=0
+while [ $choice -ne 5 ]
+do
+read choice
+case  $choice in
+1) date
+;;
+2) cal
+;;
+3) ls
+;;
+4) pwd
+;;
+*)echo "INvalid choice"
+esac
+done
+
